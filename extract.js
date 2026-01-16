@@ -11,16 +11,21 @@ async function downloadAndExtract() {
 
         pdfParser.on("pdfParser_dataError", errData => console.error(errData.parserError));
         pdfParser.on("pdfParser_dataReady", pdfData => {
-            const rawText = pdfParser.getRawTextContent();
-            fs.writeFileSync('date_meteo.txt', rawText);
-            console.log("Succes! Textul a fost extras în date_meteo.txt");
+            let rawText = pdfParser.getRawTextContent();
+            
+            // CURĂȚARE: Eliminăm caracterele de control și decodăm URL-urile
+            let cleanText = decodeURIComponent(rawText)
+                .replace(/\r\n/g, " ")
+                .replace(/%20/g, " ")
+                .replace(/\s+/g, " ");
+
+            fs.writeFileSync('date_meteo.txt', cleanText);
+            console.log("Succes! Text curățat salvat.");
         });
 
         pdfParser.parseBuffer(response.data);
     } catch (error) {
-        console.error("Eroare la descarcare:", error);
         process.exit(1);
     }
 }
-
 downloadAndExtract();
