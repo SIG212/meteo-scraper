@@ -1,0 +1,65 @@
+{
+  "ultima_actualizare": "2026-01-18T17:33:47.332Z",
+  "date": {
+    "fagaras": {
+      "peste_1800": {
+        "nivel": 4,
+        "text": "Ridicat",
+        "descriere": "În ultimele 36 de ore s-au depus local 10..20 cm de zăpadă în zonele înalte, mai ales pe versanții nordici. Temperaturile relativ ridicate din ultimele zile au determinat însă umezirea și îngreunarea zăpezii, în special sub 2000 m. În zona crestelor ..."
+      },
+      "sub_1800": {
+        "nivel": 3,
+        "text": "Însemnat",
+        "descriere": "Stratul de zăpadă are și aici dimensiuni destul de mari, local de 30..60 cm, iar pe versanții nordici s-au depus pe alocuri peste 10 cm de zăpadă proaspătă, în special la peste 1600 m. Temperaturile diurne apropiate de 0 grade din primele 24 de ore v..."
+      }
+    },
+    "bucegi": {
+      "peste_1800": {
+        "nivel": 0,
+        "text": "Necunoscut",
+        "descriere": "..."
+      },
+      "sub_1800": {
+        "nivel": 0,
+        "text": "Necunoscut",
+        "descriere": "..."
+      }
+    },
+    "rodnei": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat",
+        "descriere": "în partea superioară a zăpezii întâlnim un strat care continuă să prezinte rezistență relativ scăzută în primii 20...40 cm, deși s-a mai compactat în ultimul interval pe fondul temperaturilor mai crescute. Scăderea temperaturii va ajuta la consolidar..."
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat",
+        "descriere": "stratul de zăpadă este mai consistent la altitudini de peste 1500 m și pe versanții vestici, iar pe unele văi umbrite se întâlnesc depozite mai însemnate. Stratul este ușor umezit, iar răcirea vremii va ajuta la consolidarea treptată a zăpezii. Se me..."
+      }
+    },
+    "ceahlau": {
+      "peste_1800": {
+        "nivel": 0,
+        "text": "Necunoscut",
+        "descriere": "..."
+      },
+      "sub_1800": {
+        "nivel": 0,
+        "text": "Necunoscut",
+        "descriere": "..."
+      }
+    },
+    "occidentali": {
+      "peste_1800": {
+        "nivel": 0,
+        "text": "Necunoscut",
+        "descriere": "..."
+      },
+      "sub_1800": {
+        "nivel": 0,
+        "text": "Necunoscut",
+        "descriere": "..."
+      }
+    }
+  }
+}
