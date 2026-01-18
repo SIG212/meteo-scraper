@@ -13,12 +13,21 @@ async function downloadAndExtract() {
             let rawText = decodeURIComponent(pdfParser.getRawTextContent())
                 .replace(/\s+/g, " ");
 
-            const masive = {
-                "fagaras": "MUNȚII FĂGĂRAȘ",
-                "bucegi": "MUNȚII BUCEGI",
-                "rodnei": "MASIVELE RODNEI",
-                "ceahlau": "MASIVUL CEAHLĂU",
-                "occidentali": "CARPAȚII OCCIDENTALI"
+           const masive = {
+                "rodnei": "RODNEI",
+                "bistritei": "BISTRIȚEI",
+                "calimani": "CĂLIMANI",
+                "ceahlau": "CEAHLĂU",
+                "fagaras": "FĂGĂRAȘ",
+                "bucegi": "BUCEGI",
+                "parang": "PARÂNG",
+                "sureanu": "ȘUREANU",
+                "tarcu": "ȚARCU",
+                "godeanu": "GODEANU",
+                "vladeasa": "VLĂDEASA",
+                "muntele_mare": "MUNTELE MARE",
+                "gilau": "GILĂU",
+                "occidentali": "OCCIDENTALI"
             };
 
             let rezultate = {
@@ -27,16 +36,20 @@ async function downloadAndExtract() {
             };
 
             for (let id in masive) {
-                let numePDF = masive[id];
-                let startPos = rawText.indexOf(numePDF);
+                let cuvantCautat = masive[id];
+                // Căutăm cuvântul indiferent de litere mari/mici
+                let regexBusca = new RegExp(cuvantCautat, "i");
+                let matchPos = rawText.search(regexBusca);
                 
-                if (startPos !== -1) {
-                    // Tăiem o bucată de text relevantă pentru acest masiv
-                    let section = rawText.substring(startPos, startPos + 2500);
+                if (matchPos !== -1) {
+                    // Luăm o bucată de 2500 caractere din jurul cuvântului găsit
+                    // pentru a fi siguri că prindem și riscul care poate fi deasupra sau dedesubt
+                    let startPoint = Math.max(0, matchPos - 500);
+                    let section = rawText.substring(startPoint, startPos + 2500);
                     
                     rezultate.date[id] = {
-                        peste_1800: extractRisc(section, "Peste 1800 m"),
-                        sub_1800: extractRisc(section, "Sub 1800 m")
+                        peste_1800: extractRiscOnly(section, "Peste 1800 m"),
+                        sub_1800: extractRiscOnly(section, "Sub 1800 m")
                     };
                 }
             }
