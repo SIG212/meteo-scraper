@@ -1,6 +1,46 @@
 {
-  "ultima_actualizare": "2026-01-18T17:48:57.119Z",
+  "ultima_actualizare": "2026-01-18T17:58:07.243Z",
   "date": {
+    "rodnei": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "bistritei": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "calimani": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "ceahlau": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      }
+    },
     "fagaras": {
       "peste_1800": {
         "nivel": 4,
@@ -21,24 +61,54 @@
         "text": "Însemnat"
       }
     },
-    "rodnei": {
+    "parang": {
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
-    "ceahlau": {
+    "sureanu": {
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
+      }
+    },
+    "tarcu": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      }
+    },
+    "godeanu": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      }
+    },
+    "vladeasa": {
+      "peste_1800": {
+        "nivel": 0,
+        "text": "Necunoscut"
+      },
+      "sub_1800": {
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "occidentali": {
