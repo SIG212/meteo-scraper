@@ -73,7 +73,7 @@ function extractRisc(section, altitudine) {
     return {
         nivel: nivel,
         text: labels[nivel],
-        descriere: fragment.length > 5 ? fragment.trim().substring(0, 250) + "..." : "Vezi prognoza generală a masivului."
+
     };
 }
 downloadAndExtract();
