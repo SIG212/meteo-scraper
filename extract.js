@@ -52,23 +52,28 @@ async function downloadAndExtract() {
     }
 }
 
-function extractRisc(text, altitudine) {
-    // Găsește fragmentul dintre "Peste 1800" și "Sub 1800" sau final
+function extractRisc(section, altitudine) {
+    // 1. Încercăm să izolăm fragmentul de altitudine
     let regex = new RegExp(altitudine + ":(.*?)(?:Sub 1800 m|Page|----------------|$)", "i");
-    let match = text.match(regex);
+    let match = section.match(regex);
     let fragment = match ? match[1] : "";
 
-    // Caută cifra riscului (1-5)
+    // 2. Căutăm cifra riscului (1-5) în fragmentul de altitudine
     let riscMatch = fragment.match(/risc\s*.*?\s*\(?([1-5])\)?/i);
     let nivel = riscMatch ? parseInt(riscMatch[1]) : 0;
+
+    // 3. Dacă nu am găsit (nivel 0), căutăm în toată secțiunea (pentru cazurile unde e scris la început)
+    if (nivel === 0) {
+        let generalRiskMatch = section.match(/RISC\s*([1-5])/i);
+        nivel = generalRiskMatch ? parseInt(generalRiskMatch[1]) : 0;
+    }
     
     const labels = ["Necunoscut", "Scăzut", "Moderat", "Însemnat", "Ridicat", "Foarte ridicat"];
     
     return {
         nivel: nivel,
         text: labels[nivel],
-        descriere: fragment.trim().substring(0, 250) + "..."
+        descriere: fragment.length > 5 ? fragment.trim().substring(0, 250) + "..." : "Vezi prognoza generală a masivului."
     };
 }
-
 downloadAndExtract();
