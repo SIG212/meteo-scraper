@@ -1,8 +1,8 @@
 name: Robot_Meteo_Zilnic
 on:
   schedule:
-    - cron: '0 8 * * *' # Rulează zilnic la ora 8:00 AM UTC
-  workflow_dispatch:   # Îți permite să îl pornești și manual pentru test
+    - cron: '0 8 * * *'
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -10,16 +10,24 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install axios pdf-parse
-      - run: node extract.js
-      - name: Salvează fișierul
+
+      - name: Instalează modulele necesare
+        run: npm install axios pdf2json
+
+      - name: Execută extracția
+        run: node extract.js
+
+      - name: Salvează fișierul text
         run: |
           git config --global user.name "MeteoBot"
           git config --global user.email "bot@github.com"
           git add date_meteo.txt
-          git commit -m "Update date meteo" || echo "Nu sunt schimbări"
+          git commit -m "Update date meteo" || echo "Fără modificări"
           git push
