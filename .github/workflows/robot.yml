@@ -24,10 +24,10 @@ jobs:
       - name: Execută extracția
         run: node extract.js
 
-      - name: Salvează fișierul text
+      - name: Salvează fișierul JSON
         run: |
           git config --global user.name "MeteoBot"
           git config --global user.email "bot@github.com"
-          git add date_meteo.txt
-          git commit -m "Update date meteo" || echo "Fără modificări"
+          git add date_meteo.json
+          git commit -m "Update JSON nivologie" || echo "Fără modificări"
           git push
