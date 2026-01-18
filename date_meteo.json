@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-01-18T17:33:47.332Z",
+  "ultima_actualizare": "2026-01-18T17:36:48.352Z",
   "date": {
     "fagaras": {
       "peste_1800": {
@@ -15,14 +15,14 @@
     },
     "bucegi": {
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut",
-        "descriere": "..."
+        "nivel": 3,
+        "text": "Însemnat",
+        "descriere": "Vezi prognoza generală a masivului."
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut",
-        "descriere": "..."
+        "nivel": 3,
+        "text": "Însemnat",
+        "descriere": "Vezi prognoza generală a masivului."
       }
     },
     "rodnei": {
@@ -39,26 +39,26 @@
     },
     "ceahlau": {
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut",
-        "descriere": "..."
+        "nivel": 2,
+        "text": "Moderat",
+        "descriere": "Vezi prognoza generală a masivului."
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut",
-        "descriere": "..."
+        "nivel": 2,
+        "text": "Moderat",
+        "descriere": "Vezi prognoza generală a masivului."
       }
     },
     "occidentali": {
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut",
-        "descriere": "..."
+        "nivel": 2,
+        "text": "Moderat",
+        "descriere": "Vezi prognoza generală a masivului."
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut",
-        "descriere": "..."
+        "nivel": 2,
+        "text": "Moderat",
+        "descriere": "Vezi prognoza generală a masivului."
       }
     }
   }
