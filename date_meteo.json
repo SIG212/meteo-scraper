@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-01-19T08:26:26.284Z",
+  "ultima_actualizare": "2026-01-20T08:10:48.609Z",
   "date": {
     "rodnei": {
       "peste_1800": {
@@ -43,8 +43,8 @@
     },
     "fagaras": {
       "peste_1800": {
-        "nivel": 4,
-        "text": "Ridicat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
         "nivel": 3,
