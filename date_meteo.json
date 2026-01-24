@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-01-23T04:39:50.941Z",
+  "ultima_actualizare": "2026-01-24T04:33:34.289Z",
   "date": {
     "rodnei": {
       "peste_1800": {
@@ -7,8 +7,8 @@
         "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "bistritei": {
@@ -17,8 +17,8 @@
         "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "calimani": {
@@ -27,24 +27,24 @@
         "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "ceahlau": {
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "fagaras": {
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -53,8 +53,8 @@
     },
     "bucegi": {
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -63,42 +63,42 @@
     },
     "parang": {
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "sureanu": {
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "tarcu": {
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "godeanu": {
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "vladeasa": {
@@ -113,12 +113,12 @@
     },
     "occidentali": {
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     }
   }
