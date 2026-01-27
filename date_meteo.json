@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-01-26T04:53:56.335Z",
+  "ultima_actualizare": "2026-01-27T04:44:13.450Z",
   "date": {
     "rodnei": {
       "peste_1800": {
@@ -67,8 +67,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "sureanu": {
@@ -77,8 +77,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "tarcu": {
@@ -87,8 +87,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "godeanu": {
@@ -97,8 +97,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "vladeasa": {
