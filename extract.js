@@ -13,22 +13,24 @@ async function downloadAndExtract() {
             let rawText = decodeURIComponent(pdfParser.getRawTextContent())
                 .replace(/\s+/g, " ");
 
-            const masive = {
-                "rodnei": "RODNEI",
-                "bistritei": "BISTRIȚEI",
-                "calimani": "CĂLIMANI",
-                "ceahlau": "CEAHLĂU",
-                "fagaras": "FĂGĂRAȘ",
-                "bucegi": "BUCEGI",
-                "parang": "PARÂNG",
-                "sureanu": "ȘUREANU",
-                "tarcu": "ȚARCU",
-                "godeanu": "GODEANU",
-                "vladeasa": "VLĂDEASA",
-                "muntele_mare": "MUNTELE MARE",
-                "gilau": "GILĂU",
-                "occidentali": "OCCIDENTALI"
-            };
+            const MOUNTAIN_MAPPINGS = {
+    "rodnei": ["RODNEI", "ORIENTALI"],
+    "bistritei": ["BISTRIȚEI", "ORIENTALI"],
+    "calimani": ["CĂLIMANI", "ORIENTALI"],
+    "ceahlau": ["CEAHLĂU", "ORIENTALI"],
+    "fagaras": ["FĂGĂRAȘ", "MERIDIONALI"],
+    "bucegi": ["BUCEGI", "MERIDIONALI"],
+    "parang": ["PARÂNG", "MERIDIONALI"],
+    "sureanu": ["ȘUREANU", "MERIDIONALI"],
+    "tarcu": ["ȚARCU", "MERIDIONALI"],
+    "godeanu": ["GODEANU", "MERIDIONALI"],
+    "vladeasa": ["VLĂDEASA", "OCCIDENTALI"],
+    "muntele_mare": ["MUNTELE MARE", "OCCIDENTALI"],
+    "gilau": ["GILĂU", "OCCIDENTALI"],
+    "occidentali": ["OCCIDENTALI"],
+    "orientali": ["ORIENTALI"],
+    "meridionali": ["MERIDIONALI"]
+};
 
             let rezultate = {
                 ultima_actualizare: new Date().toISOString(),
