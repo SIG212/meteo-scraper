@@ -1,57 +1,10 @@
 {
-  "ultima_actualizare": "2026-01-29T05:04:10.335Z",
+  "ultima_actualizare": "2026-01-29T09:45:53.402Z",
+  "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
-    "rodnei": {
-      "sursa": "RODNEI",
-      "fallback": false,
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
-      }
-    },
-    "bistritei": {
-      "sursa": "BISTRIȚEI",
-      "fallback": false,
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
-      }
-    },
-    "calimani": {
-      "sursa": "CĂLIMANI",
-      "fallback": false,
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
-      }
-    },
-    "ceahlau": {
-      "sursa": "CEAHLĂU",
-      "fallback": false,
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      }
-    },
     "fagaras": {
-      "sursa": "FĂGĂRAȘ",
-      "fallback": false,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
@@ -62,68 +15,68 @@
       }
     },
     "bucegi": {
-      "sursa": "BUCEGI",
-      "fallback": false,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      }
-    },
-    "parang": {
-      "sursa": "PARÂNG",
-      "fallback": false,
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      }
-    },
-    "sureanu": {
-      "sursa": "ȘUREANU",
-      "fallback": false,
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "tarcu": {
-      "sursa": "ȚARCU",
-      "fallback": false,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "godeanu": {
-      "sursa": "GODEANU",
-      "fallback": false,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
-    "vladeasa": {
-      "sursa": "VLĂDEASA",
-      "fallback": false,
+    "parang": {
+      "gasit": true,
+      "sursa": "specific",
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "sureanu": {
+      "gasit": true,
+      "sursa": "specific",
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "retezat": {
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -133,9 +86,45 @@
         "text": "Necunoscut"
       }
     },
-    "muntele_mare": {
-      "sursa": "OCCIDENTALI",
-      "fallback": true,
+    "rodnei": {
+      "gasit": true,
+      "sursa": "specific",
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "calimani": {
+      "gasit": true,
+      "sursa": "specific",
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "bistritei": {
+      "gasit": true,
+      "sursa": "specific",
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "ceahlau": {
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
@@ -145,21 +134,33 @@
         "text": "Moderat"
       }
     },
-    "gilau": {
-      "sursa": "OCCIDENTALI",
-      "fallback": true,
+    "hasmas": {
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
+      }
+    },
+    "ciucas": {
+      "gasit": false,
+      "sursa": null,
+      "peste_1800": {
+        "nivel": 0,
+        "text": "Necunoscut"
+      },
+      "sub_1800": {
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "occidentali": {
-      "sursa": "OCCIDENTALI",
-      "fallback": false,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
@@ -169,28 +170,28 @@
         "text": "Moderat"
       }
     },
-    "orientali": {
-      "sursa": "ORIENTALI",
-      "fallback": false,
+    "vladeasa": {
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
       }
     },
-    "meridionali": {
-      "sursa": "MERIDIONALI",
-      "fallback": false,
+    "bihor": {
+      "gasit": true,
+      "sursa": "regional",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     }
   }
