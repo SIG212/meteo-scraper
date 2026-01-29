@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-01-29T09:58:17.141Z",
+  "ultima_actualizare": "2026-01-29T11:01:20.600Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -27,27 +27,29 @@
       }
     },
     "piatra_craiului": {
-      "gasit": true,
-      "sursa": "fallback:fagaras",
+      "gasit": false,
+      "sursa": null,
+      "mesaj": "Nu există date de la ANM. Contactați Salvamont local.",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "leaota": {
-      "gasit": true,
-      "sursa": "fallback:bucegi",
+      "gasit": false,
+      "sursa": null,
+      "mesaj": "Nu există date de la ANM. Contactați Salvamont local.",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "iezer_papusa": {
@@ -123,15 +125,16 @@
       }
     },
     "cernei": {
-      "gasit": true,
-      "sursa": "fallback:tarcu",
+      "gasit": false,
+      "sursa": null,
+      "mesaj": "Nu există date de la ANM. Contactați Salvamont local.",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "rodnei": {
@@ -196,10 +199,10 @@
     },
     "ciucas": {
       "gasit": true,
-      "sursa": "fallback:bucegi",
+      "sursa": "fallback:occidentali",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -232,10 +235,10 @@
     },
     "piatra_mare": {
       "gasit": true,
-      "sursa": "fallback:bucegi",
+      "sursa": "fallback:occidentali",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -246,8 +249,8 @@
       "gasit": true,
       "sursa": "fallback:ciucas",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -256,10 +259,10 @@
     },
     "vrancei": {
       "gasit": true,
-      "sursa": "fallback:penteleu",
+      "sursa": "fallback:occidentali",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -339,15 +342,16 @@
       }
     },
     "semenic": {
-      "gasit": true,
-      "sursa": "fallback:occidentali",
+      "gasit": false,
+      "sursa": null,
+      "mesaj": "Nu există date de la ANM. Contactați Salvamont local.",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     }
   }
