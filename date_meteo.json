@@ -1,10 +1,7 @@
 {
-  "ultima_actualizare": "2026-01-29T09:45:53.402Z",
-  "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
+  "ultima_actualizare": "2026-01-29T09:51:34.708Z",
   "date": {
     "fagaras": {
-      "gasit": true,
-      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
@@ -15,8 +12,6 @@
       }
     },
     "bucegi": {
-      "gasit": true,
-      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
@@ -24,71 +19,9 @@
       "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
-      }
-    },
-    "tarcu": {
-      "gasit": true,
-      "sursa": "specific",
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
-      }
-    },
-    "godeanu": {
-      "gasit": true,
-      "sursa": "specific",
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
-      }
-    },
-    "parang": {
-      "gasit": true,
-      "sursa": "specific",
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
-      }
-    },
-    "sureanu": {
-      "gasit": true,
-      "sursa": "specific",
-      "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
-      }
-    },
-    "retezat": {
-      "gasit": false,
-      "sursa": null,
-      "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
-      },
-      "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
       }
     },
     "rodnei": {
-      "gasit": true,
-      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
@@ -99,8 +32,6 @@
       }
     },
     "calimani": {
-      "gasit": true,
-      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
@@ -111,8 +42,6 @@
       }
     },
     "bistritei": {
-      "gasit": true,
-      "sursa": "specific",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
@@ -123,8 +52,6 @@
       }
     },
     "ceahlau": {
-      "gasit": true,
-      "sursa": "specific",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
@@ -134,33 +61,47 @@
         "text": "Moderat"
       }
     },
-    "hasmas": {
-      "gasit": false,
-      "sursa": null,
+    "tarcu": {
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
-    "ciucas": {
-      "gasit": false,
-      "sursa": null,
+    "godeanu": {
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
+      }
+    },
+    "parang": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      }
+    },
+    "sureanu": {
+      "peste_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
+      },
+      "sub_1800": {
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "occidentali": {
-      "gasit": true,
-      "sursa": "specific",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
@@ -171,8 +112,6 @@
       }
     },
     "vladeasa": {
-      "gasit": true,
-      "sursa": "specific",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
@@ -182,9 +121,17 @@
         "text": "Moderat"
       }
     },
-    "bihor": {
-      "gasit": true,
-      "sursa": "regional",
+    "muntele_mare": {
+      "peste_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      },
+      "sub_1800": {
+        "nivel": 2,
+        "text": "Moderat"
+      }
+    },
+    "gilau": {
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
