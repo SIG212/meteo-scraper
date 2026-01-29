@@ -1,12 +1,12 @@
 {
-  "ultima_actualizare": "2026-01-28T14:03:45.306Z",
+  "ultima_actualizare": "2026-01-29T05:04:10.335Z",
   "date": {
     "rodnei": {
       "sursa": "RODNEI",
       "fallback": false,
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -17,8 +17,8 @@
       "sursa": "BISTRIȚEI",
       "fallback": false,
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -29,8 +29,8 @@
       "sursa": "CĂLIMANI",
       "fallback": false,
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -57,8 +57,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "bucegi": {
@@ -69,8 +69,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "parang": {
@@ -81,8 +81,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "sureanu": {
@@ -93,8 +93,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "tarcu": {
@@ -105,8 +105,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "godeanu": {
@@ -117,8 +117,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "vladeasa": {
@@ -173,8 +173,8 @@
       "sursa": "ORIENTALI",
       "fallback": false,
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
         "nivel": 2,
@@ -189,8 +189,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     }
   }
