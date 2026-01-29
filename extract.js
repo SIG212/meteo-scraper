@@ -23,13 +23,13 @@ const MOUNTAINS = {
         searchTerms: ["PIATRA CRAIULUI", "PIATRA-CRAIULUI"],
         specificGroup: "piatraCraiului",
         regionalGroup: "meridionali",
-        fallbackTo: "fagaras"
+        noANMData: true // Nu are date de la ANM
     },
     leaota: {
         searchTerms: ["LEAOTA"],
         specificGroup: "leaota",
         regionalGroup: "meridionali",
-        fallbackTo: "bucegi"
+        noANMData: true // Nu are date de la ANM
     },
     iezer_papusa: {
         searchTerms: ["IEZER", "PĂPUȘA", "PAPUSA"],
@@ -69,7 +69,7 @@ const MOUNTAINS = {
         searchTerms: ["CERNEI", "MEHEDINȚI"],
         specificGroup: "cernei",
         regionalGroup: "meridionali",
-        fallbackTo: "tarcu"
+        noANMData: true // Nu are date de la ANM
     },
     
     // === CARPAȚII ORIENTALI ===
@@ -106,7 +106,7 @@ const MOUNTAINS = {
         searchTerms: ["CIUCAȘ", "CIUCAS"],
         specificGroup: "ciucas",
         regionalGroup: "orientali",
-        fallbackTo: "bucegi"
+        fallbackTo: "occidentali" // Preia din Occidentali
     },
     baiului: {
         searchTerms: ["BAIULUI", "BAIU"],
@@ -124,7 +124,7 @@ const MOUNTAINS = {
         searchTerms: ["PIATRA MARE", "PIATRA-MARE"],
         specificGroup: "piatraMare",
         regionalGroup: "orientali",
-        fallbackTo: "bucegi"
+        fallbackTo: "occidentali" // Preia din Occidentali
     },
     penteleu: {
         searchTerms: ["PENTELEU"],
@@ -136,7 +136,7 @@ const MOUNTAINS = {
         searchTerms: ["VRANCEI", "VRANCEA"],
         specificGroup: "vrancei",
         regionalGroup: "orientali",
-        fallbackTo: "penteleu"
+        fallbackTo: "occidentali" // Preia din Occidentali
     },
     
     // === CARPAȚII OCCIDENTALI ===
@@ -150,7 +150,8 @@ const MOUNTAINS = {
         searchTerms: ["APUSENI"],
         specificGroup: "occidentali",
         regionalGroup: "occidentali",
-        noAltitudeSplit: true
+        noAltitudeSplit: true,
+        fallbackTo: "occidentali"
     },
     vladeasa: {
         searchTerms: ["VLĂDEASA", "VLADEASA"],
@@ -184,8 +185,7 @@ const MOUNTAINS = {
         searchTerms: ["SEMENIC"],
         specificGroup: "semenic",
         regionalGroup: "occidentali",
-        noAltitudeSplit: true,
-        fallbackTo: "occidentali"
+        noANMData: true // Nu are date de la ANM
     }
 };
 
@@ -321,6 +321,18 @@ function parseAvalancheRisks(rawText) {
     // === PRIMA TRECERE: extrage date directe ===
     for (const [mountainId, config] of Object.entries(MOUNTAINS)) {
         
+        // Dacă masivul nu are date ANM, pune mesajul special
+        if (config.noANMData) {
+            rezultate.date[mountainId] = {
+                gasit: false,
+                sursa: null,
+                mesaj: "Nu există date de la ANM. Contactați Salvamont local.",
+                peste_1800: risk(0),
+                sub_1800: risk(0)
+            };
+            continue;
+        }
+        
         // Verifică dacă muntele e menționat explicit
         const isMentionedExplicit = config.searchTerms.some(term => 
             rawText.match(new RegExp(term, 'i'))
@@ -389,9 +401,12 @@ function parseAvalancheRisks(rawText) {
     }
     
     // === A DOUA TRECERE: aplică fallback-uri ===
-    // Repetă de câteva ori pentru lanțuri de fallback (ex: Penteleu -> Ciucaș -> Bucegi)
+    // Repetă de câteva ori pentru lanțuri de fallback
     for (let i = 0; i < 3; i++) {
         for (const [mountainId, config] of Object.entries(MOUNTAINS)) {
+            // Skip dacă are noANMData
+            if (config.noANMData) continue;
+            
             const data = rezultate.date[mountainId];
             
             // Dacă nu are date valide și are fallback definit
