@@ -1,29 +1,29 @@
 {
-  "ultima_actualizare": "2026-02-06T05:13:45.748Z",
+  "ultima_actualizare": "2026-02-07T05:03:44.204Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "bucegi": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "piatra_craiului": {
@@ -53,15 +53,15 @@
       }
     },
     "iezer_papusa": {
-      "gasit": true,
-      "sursa": "fallback:fagaras",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "tarcu": {
@@ -210,27 +210,27 @@
       }
     },
     "baiului": {
-      "gasit": true,
-      "sursa": "fallback:bucegi",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "postavaru": {
-      "gasit": true,
-      "sursa": "fallback:bucegi",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "piatra_mare": {
