@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-02-13T05:19:29.274Z",
+  "ultima_actualizare": "2026-02-14T05:07:21.626Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -141,60 +141,60 @@
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "calimani": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "bistritei": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "ceahlau": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "hasmas": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "fallback:ceahlau",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "ciucas": {
