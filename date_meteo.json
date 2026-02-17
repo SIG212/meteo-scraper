@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-02-16T05:24:56.789Z",
+  "ultima_actualizare": "2026-02-17T05:20:19.502Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -10,8 +10,8 @@
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "bucegi": {
@@ -54,14 +54,14 @@
     },
     "iezer_papusa": {
       "gasit": true,
-      "sursa": "fallback:fagaras",
+      "sursa": "regional",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "tarcu": {
@@ -114,14 +114,14 @@
     },
     "retezat": {
       "gasit": true,
-      "sursa": "fallback:parang",
+      "sursa": "regional",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "cernei": {
