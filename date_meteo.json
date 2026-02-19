@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-02-18T05:21:42.965Z",
+  "ultima_actualizare": "2026-02-19T05:20:21.119Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -54,7 +54,7 @@
     },
     "iezer_papusa": {
       "gasit": true,
-      "sursa": "regional",
+      "sursa": "fallback:fagaras",
       "peste_1800": {
         "nivel": 3,
         "text": "Însemnat"
@@ -68,60 +68,60 @@
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "godeanu": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "parang": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "sureanu": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "retezat": {
-      "gasit": true,
-      "sursa": "regional",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "cernei": {
