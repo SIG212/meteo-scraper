@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-03-13T05:11:38.193Z",
+  "ultima_actualizare": "2026-03-13T07:51:49.422Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -141,12 +141,12 @@
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "calimani": {
@@ -342,16 +342,15 @@
       }
     },
     "semenic": {
-      "gasit": false,
-      "sursa": null,
-      "mesaj": "Nu există date de la ANM. Contactați Salvamont local.",
+      "gasit": true,
+      "sursa": "fallback:occidentali",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     }
   }
