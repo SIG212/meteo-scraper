@@ -71,11 +71,11 @@ const MOUNTAINS = {
         regionalGroup: "meridionali",
         noANMData: true // Nu are date de la ANM
     },
-    
+
     // === CARPAȚII ORIENTALI ===
     rodnei: {
-        searchTerms: ["RODNEI", "RODNA", "MARAMUREȘ"],
-        specificGroup: "rodneiCalimani",
+        searchTerms: ["RODNEI", "RODNA"],
+        specificGroup: "rodnei",        // ← grup propriu, separat de Călimani
         regionalGroup: "orientali"
     },
     calimani: {
@@ -106,7 +106,7 @@ const MOUNTAINS = {
         searchTerms: ["CIUCAȘ", "CIUCAS"],
         specificGroup: "ciucas",
         regionalGroup: "orientali",
-        fallbackTo: "occidentali" // Preia din Occidentali
+        fallbackTo: "occidentali"
     },
     baiului: {
         searchTerms: ["BAIULUI", "BAIU"],
@@ -124,7 +124,7 @@ const MOUNTAINS = {
         searchTerms: ["PIATRA MARE", "PIATRA-MARE"],
         specificGroup: "piatraMare",
         regionalGroup: "orientali",
-        fallbackTo: "occidentali" // Preia din Occidentali
+        fallbackTo: "occidentali"
     },
     penteleu: {
         searchTerms: ["PENTELEU"],
@@ -136,9 +136,9 @@ const MOUNTAINS = {
         searchTerms: ["VRANCEI", "VRANCEA"],
         specificGroup: "vrancei",
         regionalGroup: "orientali",
-        fallbackTo: "occidentali" // Preia din Occidentali
+        fallbackTo: "occidentali"
     },
-    
+
     // === CARPAȚII OCCIDENTALI ===
     occidentali: {
         searchTerms: ["OCCIDENTALI"],
@@ -185,11 +185,11 @@ const MOUNTAINS = {
         searchTerms: ["SEMENIC"],
         specificGroup: "semenic",
         regionalGroup: "occidentali",
-        noANMData: true // Nu are date de la ANM
+        fallbackTo: "occidentali"   // ← fallback în loc de noANMData
     }
 };
 
-// Grupuri specifice (ex: "MASIVELE RODNEI, CĂLIMANI-BISTRIȚEI")
+// Grupuri specifice
 const SPECIFIC_GROUPS = {
     fagarasBucegi: {
         patterns: [
@@ -206,10 +206,24 @@ const SPECIFIC_GROUPS = {
         patterns: [/IEZER[\s\-]+PĂPUȘA/i, /MUNȚII IEZER/i],
         endPatterns: [/CARPAȚII ORIENTALI/i, /FĂGĂRAȘ/i, /BUCEGI/i]
     },
+    // ← grup dedicat doar pentru Rodnei (Risc 3 în buletinul curent)
+    rodnei: {
+        patterns: [
+            /MASIVUL RODNEI/i,
+            /MASIVELE RODNEI/i
+        ],
+        endPatterns: [
+            /CARPAȚII MERIDIONALI/i,
+            /CARPAȚII OCCIDENTALI/i,
+            /MASIVELE CĂLIMANI/i,
+            /CĂLIMANI[\s,\-]{1,20}BISTRIȚEI/i,
+            /CEAHLĂU/i
+        ]
+    },
+    // ← grup pentru Călimani-Bistriței (Risc 2 în buletinul curent)
     rodneiCalimani: {
         patterns: [
-            /MASIVELE RODNEI/i,
-            /RODNEI[\s,\-]{1,20}CĂLIMANI/i,
+            /MASIVELE CĂLIMANI[\s\-]+BISTRIȚEI/i,
             /CĂLIMANI[\s,\-]{1,20}BISTRIȚEI/i
         ],
         endPatterns: [/CEAHLĂU/i, /CARPAȚII MERIDIONALI/i, /CARPAȚII OCCIDENTALI/i, /HĂȘMAȘ/i]
@@ -276,31 +290,31 @@ const REGIONAL_GROUPS = {
 
 async function downloadAndExtract() {
     const url = "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf";
-    
+
     try {
-        const response = await axios.get(url, { 
+        const response = await axios.get(url, {
             responseType: 'arraybuffer',
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
             }
         });
-        
+
         const pdfParser = new PDFParser(this, 1);
-        
+
         pdfParser.on("pdfParser_dataError", err => {
             console.error("Eroare PDF:", err);
             process.exit(1);
         });
-        
+
         pdfParser.on("pdfParser_dataReady", pdfData => {
             const rawText = decodeURIComponent(pdfParser.getRawTextContent());
             const rezultate = parseAvalancheRisks(rawText);
-            
+
             fs.writeFileSync('date_meteo.json', JSON.stringify(rezultate, null, 2));
             console.log("✓ JSON generat: date_meteo.json");
             console.log(JSON.stringify(rezultate, null, 2));
         });
-        
+
         pdfParser.parseBuffer(response.data);
     } catch (error) {
         console.error("Eroare:", error.message);
@@ -314,13 +328,13 @@ function parseAvalancheRisks(rawText) {
         sursa: "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
         date: {}
     };
-    
+
     const specificCache = {};
     const regionalCache = {};
-    
+
     // === PRIMA TRECERE: extrage date directe ===
     for (const [mountainId, config] of Object.entries(MOUNTAINS)) {
-        
+
         // Dacă masivul nu are date ANM, pune mesajul special
         if (config.noANMData) {
             rezultate.date[mountainId] = {
@@ -332,39 +346,34 @@ function parseAvalancheRisks(rawText) {
             };
             continue;
         }
-        
-        // Verifică dacă muntele e menționat explicit
-        const isMentionedExplicit = config.searchTerms.some(term => 
-            rawText.match(new RegExp(term, 'i'))
-        );
-        
+
         // Încearcă secțiunea specifică
         let section = null;
         let sourceType = null;
-        
+
         if (config.specificGroup) {
             if (!specificCache.hasOwnProperty(config.specificGroup)) {
                 specificCache[config.specificGroup] = extractGroupSection(
-                    rawText, 
+                    rawText,
                     SPECIFIC_GROUPS[config.specificGroup]
                 );
             }
             section = specificCache[config.specificGroup];
             if (section) sourceType = 'specific';
         }
-        
+
         // Fallback la grup regional
         if (!section && config.regionalGroup) {
             if (!regionalCache.hasOwnProperty(config.regionalGroup)) {
                 regionalCache[config.regionalGroup] = extractGroupSection(
-                    rawText, 
+                    rawText,
                     REGIONAL_GROUPS[config.regionalGroup]
                 );
             }
             section = regionalCache[config.regionalGroup];
             if (section) sourceType = 'regional';
         }
-        
+
         // Nu am găsit nimic
         if (!section) {
             rezultate.date[mountainId] = {
@@ -375,10 +384,10 @@ function parseAvalancheRisks(rawText) {
             };
             continue;
         }
-        
+
         // Extrage riscurile
         let riskData;
-        
+
         if (config.specialHandler === 'bucegi') {
             riskData = extractBucegiRisks(section);
         } else if (config.specialHandler === 'fagaras') {
@@ -392,31 +401,31 @@ function parseAvalancheRisks(rawText) {
         } else {
             riskData = extractStandardRisks(section);
         }
-        
+
         rezultate.date[mountainId] = {
             gasit: true,
             sursa: sourceType,
             ...riskData
         };
     }
-    
+
     // === A DOUA TRECERE: aplică fallback-uri ===
     // Repetă de câteva ori pentru lanțuri de fallback
     for (let i = 0; i < 3; i++) {
         for (const [mountainId, config] of Object.entries(MOUNTAINS)) {
             // Skip dacă are noANMData
             if (config.noANMData) continue;
-            
+
             const data = rezultate.date[mountainId];
-            
+
             // Dacă nu are date valide și are fallback definit
-            const needsFallback = !data.gasit || 
-                                  data.sursa === null || 
+            const needsFallback = !data.gasit ||
+                                  data.sursa === null ||
                                   (data.peste_1800.nivel === 0 && data.sub_1800.nivel === 0);
-            
+
             if (needsFallback && config.fallbackTo) {
                 const fallbackData = rezultate.date[config.fallbackTo];
-                
+
                 if (fallbackData && fallbackData.gasit && fallbackData.peste_1800.nivel > 0) {
                     rezultate.date[mountainId] = {
                         gasit: true,
@@ -428,7 +437,7 @@ function parseAvalancheRisks(rawText) {
             }
         }
     }
-    
+
     return rezultate;
 }
 
@@ -436,14 +445,14 @@ function parseAvalancheRisks(rawText) {
 
 function extractGroupSection(text, group) {
     if (!group || !group.patterns) return null;
-    
+
     for (const startPattern of group.patterns) {
         const startMatch = text.match(startPattern);
         if (!startMatch) continue;
-        
+
         const startIndex = startMatch.index;
         const afterStart = text.substring(startIndex);
-        
+
         // Găsește cel mai apropiat end pattern
         let endIndex = afterStart.length;
         for (const endPattern of group.endPatterns || []) {
@@ -453,10 +462,10 @@ function extractGroupSection(text, group) {
                 endIndex = endMatch.index;
             }
         }
-        
+
         return afterStart.substring(0, endIndex);
     }
-    
+
     return null;
 }
 
@@ -465,36 +474,36 @@ function extractGroupSection(text, group) {
 function extractStandardRisks(section) {
     const peste1800 = extractRiskPeste1800(section) || extractHeaderRisk(section) || risk(0);
     const sub1800 = extractRiskSub1800(section) || risk(Math.max(0, peste1800.nivel - 1));
-    
+
     return { peste_1800: peste1800, sub_1800: sub1800 };
 }
 
 function extractFagarasRisks(section) {
     const peste1800 = extractRiskPeste1800(section) || extractHeaderRisk(section) || risk(3);
-    
+
     // Făgăraș sub 1800 - doar până la "În masivul Bucegi"
     const sub1800Match = section.match(/Sub\s*1800\s*m\s*:([\s\S]*?)(?=În masivul Bucegi|$)/i);
     let sub1800;
-    
+
     if (sub1800Match) {
         sub1800 = extractRiskFromFragment(sub1800Match[1]) || peste1800;
     } else {
         sub1800 = extractRiskSub1800(section) || peste1800;
     }
-    
+
     return { peste_1800: peste1800, sub_1800: sub1800 };
 }
 
 function extractBucegiRisks(section) {
     const peste1800 = extractRiskPeste1800(section) || extractHeaderRisk(section) || risk(3);
-    
+
     // Caută explicit "În masivul Bucegi ... risc moderat(2)"
     const patterns = [
         /În masivul Bucegi[^.]*?risc\s*(?:moderat|însemnat|ridicat|scăzut)\s*\(?(\d)\)?/i,
         /Bucegi[^.]*?risc\s*(?:moderat|însemnat|ridicat|scăzut)\s*\(?(\d)\)?/i,
         /Bucegi[^.]*?\((\d)\)/i
     ];
-    
+
     let sub1800 = null;
     for (const pattern of patterns) {
         const match = section.match(pattern);
@@ -503,7 +512,7 @@ function extractBucegiRisks(section) {
             break;
         }
     }
-    
+
     // Dacă nu găsim specific pentru Bucegi, verifică generic
     if (!sub1800) {
         const genericSub1800 = extractRiskSub1800(section);
@@ -512,9 +521,9 @@ function extractBucegiRisks(section) {
             sub1800 = genericSub1800;
         }
     }
-    
-    return { 
-        peste_1800: peste1800, 
+
+    return {
+        peste_1800: peste1800,
         sub_1800: sub1800 || risk(Math.max(1, peste1800.nivel - 1))
     };
 }
@@ -540,34 +549,34 @@ function extractSingleRisk(section) {
     // Caută în text "risc moderat (2)"
     const textMatch = section.match(/risc\s*(?:va fi\s*)?(?:moderat|însemnat|ridicat|scăzut)\s*\((\d)\)/i);
     if (textMatch) return parseInt(textMatch[1]);
-    
+
     // Caută în header "RISC 2 - MODERAT"
     const headerMatch = section.match(/RISC\s*(\d)/i);
     if (headerMatch) return parseInt(headerMatch[1]);
-    
+
     return 0;
 }
 
 function extractRiskFromFragment(fragment) {
     if (!fragment) return null;
-    
+
     // Cu număr explicit
     let match = fragment.match(/risc\s*(?:va fi\s*)?(?:însemnat|moderat|ridicat|scăzut|foarte\s*ridicat)?\s*\(?(\d)\)?/i);
     if (match) return risk(parseInt(match[1]));
-    
+
     // Doar text
     if (fragment.match(/risc\s*(?:va fi\s*)?foarte\s*ridicat/i)) return risk(5);
     if (fragment.match(/risc\s*(?:va fi\s*)?ridicat/i)) return risk(4);
     if (fragment.match(/risc\s*(?:va fi\s*)?însemnat/i)) return risk(3);
     if (fragment.match(/risc\s*(?:va fi\s*)?moderat/i)) return risk(2);
     if (fragment.match(/risc\s*(?:va fi\s*)?scăzut/i)) return risk(1);
-    
+
     return null;
 }
 
 function risk(nivel) {
-    return { 
-        nivel: nivel, 
+    return {
+        nivel: nivel,
         text: LABELS[nivel] || "Necunoscut"
     };
 }
