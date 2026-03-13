@@ -23,13 +23,13 @@ const MOUNTAINS = {
         searchTerms: ["PIATRA CRAIULUI", "PIATRA-CRAIULUI"],
         specificGroup: "piatraCraiului",
         regionalGroup: "meridionali",
-        noANMData: true // Nu are date de la ANM
+        fallbackTo: "fagaras"
     },
     leaota: {
         searchTerms: ["LEAOTA"],
         specificGroup: "leaota",
         regionalGroup: "meridionali",
-        noANMData: true // Nu are date de la ANM
+        fallbackTo: "bucegi"
     },
     iezer_papusa: {
         searchTerms: ["IEZER", "PĂPUȘA", "PAPUSA"],
@@ -226,7 +226,8 @@ const SPECIFIC_GROUPS = {
             /MASIVELE CĂLIMANI[\s\-]+BISTRIȚEI/i,
             /CĂLIMANI[\s,\-]{1,20}BISTRIȚEI/i
         ],
-        endPatterns: [/CEAHLĂU/i, /CARPAȚII MERIDIONALI/i, /CARPAȚII OCCIDENTALI/i, /HĂȘMAȘ/i]
+        // endPatterns cu minim 300 chars offset efectiv — nu tăiem înainte de Sub 1800m
+        endPatterns: [/MASIVUL CEAHLĂU/i, /CARPAȚII MERIDIONALI/i, /CARPAȚII OCCIDENTALI/i, /HĂȘMAȘ/i]
     },
     ceahlau: {
         patterns: [/MASIVUL CEAHLĂU/i, /CEAHLĂU\s*RISC/i, /CEAHLĂU\s*$/im],
@@ -457,8 +458,8 @@ function extractGroupSection(text, group) {
         let endIndex = afterStart.length;
         for (const endPattern of group.endPatterns || []) {
             const endMatch = afterStart.match(endPattern);
-            // Minim 100 chars ca să nu tăiem prea devreme
-            if (endMatch && endMatch.index < endIndex && endMatch.index > 100) {
+            // Minim 200 chars ca să nu tăiem prea devreme (ex: Sub 1800m e după ~300 chars)
+            if (endMatch && endMatch.index < endIndex && endMatch.index > 200) {
                 endIndex = endMatch.index;
             }
         }
