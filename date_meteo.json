@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-03-24T05:21:52.408Z",
+  "ultima_actualizare": "2026-03-26T05:39:46.928Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -28,7 +28,7 @@
     },
     "piatra_craiului": {
       "gasit": true,
-      "sursa": "fallback:fagaras",
+      "sursa": "regional",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
@@ -40,19 +40,19 @@
     },
     "leaota": {
       "gasit": true,
-      "sursa": "fallback:bucegi",
+      "sursa": "regional",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "iezer_papusa": {
       "gasit": true,
-      "sursa": "fallback:fagaras",
+      "sursa": "regional",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
@@ -112,14 +112,14 @@
     },
     "retezat": {
       "gasit": true,
-      "sursa": "fallback:parang",
+      "sursa": "regional",
       "peste_1800": {
         "nivel": 2,
         "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "cernei": {
