@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-04-13T06:11:51.737Z",
+  "ultima_actualizare": "2026-04-14T05:58:39.370Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -139,36 +139,36 @@
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
+      },
+      "sub_1800": {
+        "nivel": 1,
+        "text": "Scăzut"
       }
     },
     "calimani": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
+      },
+      "sub_1800": {
+        "nivel": 1,
+        "text": "Scăzut"
       }
     },
     "bistritei": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
+      },
+      "sub_1800": {
+        "nivel": 1,
+        "text": "Scăzut"
       }
     },
     "ceahlau": {
