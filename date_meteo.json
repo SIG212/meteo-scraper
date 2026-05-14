@@ -1,125 +1,125 @@
 {
-  "ultima_actualizare": "2026-05-13T06:45:17.654Z",
+  "ultima_actualizare": "2026-05-14T06:43:39.862Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "bucegi": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
+      },
+      "sub_1800": {
+        "nivel": 1,
+        "text": "Scăzut"
       }
     },
     "piatra_craiului": {
       "gasit": true,
       "sursa": "fallback:fagaras",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "leaota": {
       "gasit": true,
       "sursa": "fallback:bucegi",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
+      },
+      "sub_1800": {
+        "nivel": 1,
+        "text": "Scăzut"
       }
     },
     "iezer_papusa": {
       "gasit": true,
       "sursa": "fallback:fagaras",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       },
       "sub_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "tarcu": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "godeanu": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "parang": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "sureanu": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "retezat": {
-      "gasit": true,
-      "sursa": "fallback:parang",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "cernei": {
@@ -151,204 +151,204 @@
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "bistritei": {
       "gasit": true,
       "sursa": "specific",
       "peste_1800": {
-        "nivel": 2,
-        "text": "Moderat"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "ceahlau": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "hasmas": {
-      "gasit": true,
-      "sursa": "fallback:ceahlau",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "ciucas": {
-      "gasit": true,
-      "sursa": "fallback:occidentali",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "baiului": {
       "gasit": true,
       "sursa": "fallback:bucegi",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
+      },
+      "sub_1800": {
+        "nivel": 1,
+        "text": "Scăzut"
       }
     },
     "postavaru": {
       "gasit": true,
       "sursa": "fallback:bucegi",
       "peste_1800": {
-        "nivel": 3,
-        "text": "Însemnat"
-      },
-      "sub_1800": {
         "nivel": 2,
         "text": "Moderat"
+      },
+      "sub_1800": {
+        "nivel": 1,
+        "text": "Scăzut"
       }
     },
     "piatra_mare": {
-      "gasit": true,
-      "sursa": "fallback:occidentali",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "penteleu": {
-      "gasit": true,
-      "sursa": "fallback:ciucas",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "vrancei": {
-      "gasit": true,
-      "sursa": "fallback:occidentali",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "occidentali": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "apuseni": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "vladeasa": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "bihor": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "muntele_mare": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "gilau": {
-      "gasit": true,
-      "sursa": "specific",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     },
     "semenic": {
-      "gasit": true,
-      "sursa": "fallback:occidentali",
+      "gasit": false,
+      "sursa": null,
       "peste_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       },
       "sub_1800": {
-        "nivel": 1,
-        "text": "Scăzut"
+        "nivel": 0,
+        "text": "Necunoscut"
       }
     }
   }
