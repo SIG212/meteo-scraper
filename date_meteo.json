@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-05-15T06:52:45.880Z",
+  "ultima_actualizare": "2026-05-16T06:19:06.207Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -172,8 +172,8 @@
       }
     },
     "ceahlau": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
