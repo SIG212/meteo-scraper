@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-05-17T06:42:23.316Z",
+  "ultima_actualizare": "2026-05-18T07:58:54.074Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -136,8 +136,8 @@
       }
     },
     "rodnei": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -268,8 +268,8 @@
       }
     },
     "occidentali": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -280,8 +280,8 @@
       }
     },
     "apuseni": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -292,8 +292,8 @@
       }
     },
     "vladeasa": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -304,8 +304,8 @@
       }
     },
     "bihor": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -316,8 +316,8 @@
       }
     },
     "muntele_mare": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -328,8 +328,8 @@
       }
     },
     "gilau": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
