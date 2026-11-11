@@ -1,65 +1,65 @@
 {
-  "ultima_actualizare": "2026-11-10T12:03:00.009Z",
+  "ultima_actualizare": "2026-11-11T11:39:26.368Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "bucegi": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "piatra_craiului": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "fallback:fagaras",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "leaota": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "fallback:bucegi",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "iezer_papusa": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "fallback:fagaras",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       }
     },
     "tarcu": {
@@ -208,27 +208,27 @@
       }
     },
     "baiului": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "fallback:bucegi",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "postavaru": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "fallback:bucegi",
       "peste_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 3,
+        "text": "Însemnat"
       },
       "sub_1800": {
-        "nivel": 0,
-        "text": "Necunoscut"
+        "nivel": 2,
+        "text": "Moderat"
       }
     },
     "piatra_mare": {
