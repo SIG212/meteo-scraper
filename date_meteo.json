@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-11-20T12:27:31.719Z",
+  "ultima_actualizare": "2026-11-21T12:02:56.668Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -63,8 +63,8 @@
       }
     },
     "tarcu": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -75,8 +75,8 @@
       }
     },
     "godeanu": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -87,8 +87,8 @@
       }
     },
     "parang": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -99,8 +99,8 @@
       }
     },
     "sureanu": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -136,8 +136,8 @@
       }
     },
     "rodnei": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -148,8 +148,8 @@
       }
     },
     "calimani": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -160,8 +160,8 @@
       }
     },
     "bistritei": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
@@ -172,8 +172,8 @@
       }
     },
     "ceahlau": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
