@@ -1,5 +1,5 @@
 {
-  "ultima_actualizare": "2026-11-24T14:30:09.673Z",
+  "ultima_actualizare": "2026-11-25T13:51:26.350Z",
   "sursa": "https://www.meteoromania.ro/Upload-Produse/nivologie/nivologie.pdf",
   "date": {
     "fagaras": {
@@ -340,8 +340,8 @@
       }
     },
     "semenic": {
-      "gasit": false,
-      "sursa": null,
+      "gasit": true,
+      "sursa": "specific",
       "peste_1800": {
         "nivel": 0,
         "text": "Necunoscut"
